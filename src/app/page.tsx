@@ -60,14 +60,14 @@ export default function Home() {
   return (
     <main>
       <nav className="nav shell">
-        <a className="brand" href="#top"><Mark /> <span>DevReadme AI</span></a>
+        <a className="brand" href="#top"><Mark /> <span>ReadCraft AI</span></a>
         <div className="nav-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><Link href="/dashboard">Dashboard</Link></div>
         <div className="nav-actions"><Link href="/signin" className="nav-signin">SIGN IN</Link><Button className="nav-button" onClick={() => router.push("/signup")}>GET STARTED</Button></div>
       </nav>
 
       <section className="hero" id="top">
         <motion.div initial="hidden" animate="visible" transition={{ staggerChildren: 0.1 }} className="hero-content shell">
-          <motion.p variants={fadeUp} className="release"><i /> New: v2.0 powered by GPT-4o</motion.p>
+          <motion.p variants={fadeUp} className="release"><i /> New: v2.0 powered by nour</motion.p>
           <motion.h1 variants={fadeUp}>Generate Professional GitHub <em>READMEs</em><br />with AI</motion.h1>
           <motion.p variants={fadeUp} className="hero-copy">Transform your source code into world-class documentation in seconds. Our AI analyzes<br className="desktop-only" /> your repository structure, dependencies, and logic to craft perfect READMEs.</motion.p>
           <motion.form variants={fadeUp} className="repo-form" onSubmit={(event) => { event.preventDefault(); openGenerator(); }}>
